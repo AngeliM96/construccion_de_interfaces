@@ -1,0 +1,26 @@
+img {
+    height: 400px;
+    width: 550px;
+}
+.imperio {
+    background-color: red;
+}
+.rebeldes {
+    background-color: blue;
+}
+.vader {
+    font-size: larger;
+}
+.luke {
+    font-style: italic;
+}
+.trooper {
+    border-style: dashed;
+    letter-spacing: 3px;
+}
+.apoyo {
+    text-align: center;
+}
+.naves {
+    font-variant-caps: petite-caps;
+}
