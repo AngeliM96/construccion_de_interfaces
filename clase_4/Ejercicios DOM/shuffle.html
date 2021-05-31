@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle</title>
+</head>
+<body>
+    <div id="source">
+        <p>Este es el contenido de source</p>
+    </div>
+    <div id="destination">
+        <p>Este es el contenido de destination</p>
+    </div>
+    <div id="swap1">
+        Swap 1
+    </div>
+    <div id="swap2">
+        Swap 2
+    </div>
+    <script>
+        var contenido_source = document.getElementById("source");
+        var destino = document.getElementById("destination");
+        destino.textContent = contenido_source.textContent;
+        var swapRealizado = false
+        var swap1 = document.getElementById("swap1").textContent;
+        var swap2 = document.getElementById("swap2").textContent;
+        function swapText() {
+            if(swapRealizado) {
+                document.getElementById("swap1").textContent = swap1;
+                document.getElementById("swap2").textContent = swap2;
+                swapRealizado = false
+            }
+            else {
+                document.getElementById("swap1").textContent = swap2;
+                document.getElementById("swap2").textContent = swap1;
+                swapRealizado = true
+            }
+        }
+        setInterval(swapText, 1000);
+    </script>
+</body>
+</html>

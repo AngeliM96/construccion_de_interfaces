@@ -1,0 +1,48 @@
+body {
+    background-color: #2E3440;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2 {
+    text-align: center;
+    color: #B48EAD;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    width: 640px;
+    border-radius: 2%;
+    border: 3px solid #ECEFF4;
+}
+p {
+    text-align: center;
+}
+.caja-texto {
+    padding: 1%;
+    font-size: 20px;
+    align-content: justify;
+    color: #81A1C1;
+}
+.elecciones {
+    /* background-color: #5E81AC; */
+    padding: 1%;
+    display: inline-grid;
+    grid-template-columns: 500px 500px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0% 10% 0% 10%;
+}
+.opcion {
+    background-color: #81A1C1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-weight: bolder;
+    border: 10px solid #5E81AC;
+}
+
+a {
+    color: #2E3440;
+}
